@@ -78,7 +78,7 @@ header {
 
 /* Events List */
 #events-container {
-    padding: 50px;
+    padding: 50px;    
 }
 
 #events-container h2 {
@@ -91,11 +91,12 @@ header {
 }
 
 #events-container .card {
-    flex: 1 1 0;
+    flex: 0 0 calc(25% - 10px);
     max-width: 25%;
     border-radius: 10px;
     padding: 0;
     margin: 5px;
+
 }
 
 #events-container img {
@@ -135,4 +136,28 @@ footer {
 
 footer p {
     margin-bottom: 0;
+}
+
+
+/* Event create page */
+#event-create-container {
+    padding: 30px;
+
+}
+
+#event-create-container label{
+    font-weight: bold;
+
+}
+
+#event-create-container input {
+     font-size: 12px;;
+}
+
+
+#event-create-container select {
+       font-size: 12px;;
+}
+#event-create-container textarea {
+       font-size: 12px;;
 }
