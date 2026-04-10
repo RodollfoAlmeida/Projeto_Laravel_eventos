@@ -40,8 +40,16 @@
                 </ul>
             </div>
         </nav>
-    </header>   
-     @yield('content')   
+    </header>       
+    <main>
+       <div class="containerfluid"></div>
+       <div class="row">
+        @if(session('msg'))
+            <p class="msg">{{ session('msg') }}</p>
+        @endif
+        @yield('content')
+       </div>
+    </main>
     <footer>
     <p>HDC Events &copy;   2026</p>    
     </footer>
