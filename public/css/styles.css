@@ -212,3 +212,12 @@ footer p {
     margin: 20px 0;
 
 }
+
+#itens-list {
+    list-style: none;
+    padding: 0;
+}
+
+#itens-list li {
+    display: flex;
+}

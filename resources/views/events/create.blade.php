@@ -29,6 +29,18 @@
         <label for="title">Descrição</label>
         <textarea name="description" id="description" class="form-control" placeholder="O que vai acontecer no evento"></textarea>
     </div>
+    <div class="form-group">
+        <label for="title">Adicione itens necesarios para realização:</label>
+        <div class="form-group">
+            <input type="checkbox" name="itens[]" value="cadeiras"> Cadeira 
+        </div>
+        <div class="form-group">
+            <input type="checkbox" name="itens[]" value="pc"> PC 
+        </div>
+        <div class="form-group">
+            <input type="checkbox" name="itens[]" value="perifericos"> Perifericos (mouse, teclado, mousepad, etc...) 
+        </div>
+    </div>
     <input type="submit" class="btn btn-primary" value="Criar Evento">
     @session('msg')
         
