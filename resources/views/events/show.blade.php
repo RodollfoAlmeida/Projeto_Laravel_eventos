@@ -22,6 +22,7 @@
   </div>
      <div class="col-md-12" id="description-container">
       <h3>Sobre o Evento</h3>
+      <p class="event-description">{{ $event->description }}</p>
      </div>
 
 </div>
