@@ -31,16 +31,17 @@ class EventController extends Controller
 
     public function store(Request $request) {
 
-    $event = new  Event;
+     
+     $event = new  Event;
 
     $event->title = $request->title;
     $event->date = $request->date;
     $event->city = $request->city;
     $event->private = $request->private;
     $event->description = $request->description;
-    $event->itens = $request->itens;
+    $event->itens = $request->itens ?? null;    
 
-    //imagem upload
+    //imagem upload    
     if($request->hasfile('image') && $request->file('image')->isValid()) {
     
        $requestImage = $request->image;

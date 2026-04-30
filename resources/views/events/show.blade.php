@@ -12,12 +12,15 @@
         <p class="event-city"> <ion-icon name="location-outline"></ion-icon> {{ $event->city }}</p>
         <p class="events-participantes"><ion-icon name="people-outline"></ion-icon> X Particpantes </p>
         <p class="event-owner"><ion-icon name="star-outline"></ion-icon> Organizador do Evento   </p>
-        <a href="#" class="btn btn-primary" id="event-submit"> Confirmar Presença</a>
-        <h3> O evento conta: </h3>
-        <ul id='itens-list'>
-          @foreach ($event->itens as $itens)
+        <a href="#" class="btn btn-primary" id="event-submit"> Confirmar Presença</a>        
+        <ul id='itens-list'>         
+        
+        @if ($event->itens)    
+        <h3> O evento conta: </h3>     
+        @foreach ($event->itens as $itens )               
               <li><ion-icon name="play-outline"></ion-icon><span>{{ $itens }}</span></li>
-          @endforeach
+         @endforeach
+        @endif
         </ul>
   </div>
      <div class="col-md-12" id="description-container">
